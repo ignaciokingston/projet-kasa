@@ -15,6 +15,7 @@ const Home = () => {
   return (
     <main>
     <img className='banner-home' src={Banner1} alt="Banner montagnes mer" />
+    <h1>Chez vous, partout et ailleurs</h1>
     <div className='logements-container'>
       {logements.map (logement => (
         <Card

@@ -10,11 +10,12 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0
+    margin: 0;
+    padding: 30px
 }
 
 header {
-    padding: 25px 0 25px 0;
+    padding: 25px 25px 25px 25px;
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -25,7 +26,7 @@ header {
             float: right;
             text-decoration: none;
             color:#FF6060;
-            margin: 25px 0 25px 80px;
+            margin: 25px 20px 25px 80px;
         }
             a:hover {
                 border-bottom: 2px solid #FF6060;
