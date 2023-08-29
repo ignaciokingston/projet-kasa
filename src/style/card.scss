@@ -1,7 +1,14 @@
-.banner-home {
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner__image {
     margin-bottom: 30px;
     height: 250px;
-    width: 96%;
+    width: 97%;
+    margin-left: 18px;
     object-fit: cover;
     border-radius:20px;
     @media (max-width: 767.98px) {
@@ -9,15 +16,15 @@
     }
 }   
 
-h1 {
+.banner__title {
     width: 90%;
     font-size: 48px;
     position: absolute;
-    top: 95px;
-    right: 32px;
+    top: 85px;
+    right: 21px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 90px 0px 107px 85px;
+    padding: 90px 0px 107px 95px;
     text-align: center;
     border-radius: 25px;  
     font-weight: lighter;
@@ -39,7 +46,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 25px;
+    padding: 30px;
     @media (max-width: 767.98px) {
         margin-bottom: 4800px;
         justify-content: center;

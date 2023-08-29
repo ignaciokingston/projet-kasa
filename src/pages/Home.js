@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import Banner from '../components/Banner'
+import Banner1 from '../assets/Banner1.png';
 import Card from '../components/Card';
 import logementsData from '../annonces.json';
-import Banner1 from '../assets/Banner1.png';
 import '../style/card.css';
 
 
@@ -14,8 +15,7 @@ const Home = () => {
 
   return (
     <main>
-    <img className='banner-home' src={Banner1} alt="Banner montagnes mer" />
-    <h1>Chez vous, partout et ailleurs</h1>
+    <Banner imageUrl={Banner1} title="Chez vous, partout et ailleurs" />
     <div className='logements-container'>
       {logements.map (logement => (
         <Card
