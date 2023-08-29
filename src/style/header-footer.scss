@@ -19,24 +19,24 @@ header {
     text-decoration: none;
     @media (max-width: 767.98px) {
     margin-bottom: 20px;
-    background-color: yellow;
+    padding: 15px;
     }
     img {
         @media (max-width: 767.98px) {
+            width: 39%;
             height: 46px;
-            background-color: blue;
+            padding-left: 32px;
         }
     }
     nav {
-       width: 85%;
+       width: 100%;
        display: inline-block;
        justify-content: center;
        @media (max-width: 767.98px) {
-        background-color: black;
-        height: 46px;
         display: flex;
-        flex-direction: row;
-        justify-content: right;
+        justify-content: end;
+        height: 46px;
+        padding-right: 15px;
         }  
         }
         li {
@@ -44,16 +44,20 @@ header {
             justify-content: right;
             gap: 90px;
         }
+            @media (max-width: 767.98px) {
+                li {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 30px;
+            }      
+        }
             a {
                 text-decoration: none;
                 color:#FF6060;
                 padding: 25px 0 5px 0px;
                 @media (max-width: 767.98px) {
-                    
-                    width: 20%;
                     text-transform: uppercase;
                     font-size: 12px;
-                    background-color: aqua;   
                 }
             }
             a:hover {
@@ -68,12 +72,31 @@ footer {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    .footer__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     @media (max-width: 767.98px) {
         width: 100%;
     }
     img {
-       padding: 50px 0 50px 120px
+        height: 39px;
+        width: 122px;
+        padding: 25px;
+       @media (max-width: 767.98px) {
+        padding: 25px 25px 5px 25px;
+       }
     }
+    @media (max-width: 767.98px) {
+        p {
+        font-size: 12px;
+        margin-bottom: 30px;
+        width: 60%;
+        text-align:center;
+        }
 }
 
 
+}
