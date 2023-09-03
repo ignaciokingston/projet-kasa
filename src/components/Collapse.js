@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import arrow from '../assets/Arrow.png';
 
 const Collapse = ({ title, content}) => {
     const [isCollapsed, setIsCollapsed] = useState (true);
@@ -9,9 +10,11 @@ const Collapse = ({ title, content}) => {
 
     return (
             <div className='collapse'>
-                <button className={`collapse__button ${isCollapsed ? 'collapsed' : ''}`}>
+                <button className={`collapse__button ${isCollapsed ? 'collapsed' : ''}`} onClick={toggleCollapse}>
                     {title}
-                    <span className={`collapse__icon ${isCollapsed ? '' : 'expanded'}`} onClick={toggleCollapse}>ʌ</span>
+                    <div className={`collapse__icon ${isCollapsed ? '' : 'expanded'}`} onClick={toggleCollapse}>
+                        <img src={arrow} alt='arrow icon' />    
+                    </div>
                 </button>
                 {!isCollapsed && <div className='collapse__content'>{content}</div>}
             </div>

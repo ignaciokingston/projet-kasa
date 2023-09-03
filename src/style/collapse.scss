@@ -28,14 +28,13 @@ main h1 {
     cursor: pointer;
     border: none;
     outline: none;
-    transition: background-color 0.3s;
   }
   
   .collapse__icon {
     font-size: 32px;
     transition: transform 0.3s;
-    transform: rotate(0deg)
-  }
+    transform: rotate(0deg);
+    }
   
   .expanded .collapse__icon {
     transform: rotate(180deg);
@@ -43,11 +42,11 @@ main h1 {
   
   .collapse__content {
     width: 85%;
-    align-content: center;
     margin: 0 auto;
     text-align:left;
     padding: 12px;
     color: #FF6060;
     border-radius: 5px;
   }
+
 

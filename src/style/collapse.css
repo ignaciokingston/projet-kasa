@@ -28,7 +28,6 @@ main h1 {
   cursor: pointer;
   border: none;
   outline: none;
-  transition: background-color 0.3s;
 }
 
 .collapse__icon {
@@ -43,7 +42,6 @@ main h1 {
 
 .collapse__content {
   width: 85%;
-  align-content: center;
   margin: 0 auto;
   text-align: left;
   padding: 12px;

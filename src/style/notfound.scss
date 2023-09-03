@@ -1,0 +1,37 @@
+.main__error {
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    color: #FF6060;
+    h1 {
+        font-size: 288px;
+        margin: 20px 0 20px 0;
+        padding:0;
+        @media (max-width: 767.98px) {
+            font-size: 96px;
+        }
+    }
+    span {
+        font-size: 36px;
+        margin: 50px 0 75px 0;
+        @media (max-width: 767.98px) {
+            font-size: 18px;
+            width: 65%;
+            text-indent: 50px;
+            text-align:left;  
+        }
+    }
+    a {
+        color: #FF6060;
+        font-size: 18px;
+        margin: 50px 0 50px 0;
+        @media (max-width: 767.98px) {
+            font-size: 14px;
+        }
+    }
+}
+
