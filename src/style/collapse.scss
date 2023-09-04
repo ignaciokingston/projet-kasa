@@ -1,7 +1,26 @@
-
-
-main h1 {
-    height: 54px;
+.main__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    @media (max-width: 767.98px) {
+    padding: 0;
+    }
+    h1 {
+      height: 54px; 
+      position:absolute;
+      top: 95px;
+      left: 20px;
+      padding-right: 10px;
+      @media (max-width: 767.98px) {
+        position: absolute;
+        top: 101px;
+        left: 15px;
+        padding-bottom: 35px;
+        padding-right: 140px; 
+        }
+    }
 }
 
 .collapse {
@@ -11,26 +30,33 @@ main h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .collapse__button {
-    width: 85%;
-    padding: 12px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    background-color: #FF6060;
-    cursor: pointer;
-    border: none;
-    outline: none;
+    &__button {
+      width: 85%;
+      padding: 12px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      background-color: #FF6060;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      @media (max-width: 767.98px) {
+        width: 92%;
+        height: 30px;
+        font-size: 14px;
+        }
+    }
   }
   
   .collapse__icon {
     font-size: 32px;
     transition: transform 0.3s;
     transform: rotate(0deg);
+    @media (max-width: 767.98px) {
+      font-size: 13px;
+      }
     }
   
   .expanded .collapse__icon {

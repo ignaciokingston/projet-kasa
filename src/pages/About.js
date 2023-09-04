@@ -8,7 +8,7 @@ import '../style/collapse.css';
 function About() {
     return (
       <main className='main__about'>
-        <Banner imageUrl={Banner2} title="" />
+        <Banner className='main__about--banner' imageUrl={Banner2} title="" />
         <div className='about'>
           <Collapse title='Fiabilité' content='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.'/>
           <Collapse title='Respect' content='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.'/>
