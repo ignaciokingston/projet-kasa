@@ -9,6 +9,14 @@
      object-fit: cover;
   border-radius: 25px;
 }
+@media (max-width: 767.98px) {
+  .slideshow__image {
+    width: 93%;
+    height: 255px;
+    padding: 15px;
+    border-radius: 40px;
+  }
+}
 .slideshow__buttons {
   display: flex;
   justify-content: space-between;
@@ -23,6 +31,13 @@
   left: 50px;
   font-size: 150px;
 }
+@media (max-width: 767.98px) {
+  .slideshow__buttons--left {
+    font-size: 45px;
+    top: 200px;
+    left: 25px;
+  }
+}
 .slideshow__buttons--right {
   border: none;
   color: white;
@@ -32,4 +47,11 @@
   top: 230px;
   right: 50px;
   font-size: 150px;
+}
+@media (max-width: 767.98px) {
+  .slideshow__buttons--right {
+    font-size: 45px;
+    top: 200px;
+    right: 25px;
+  }
 }/*# sourceMappingURL=fichelogement.css.map */

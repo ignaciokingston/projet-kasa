@@ -5,7 +5,13 @@
         width: 97%;
         height: 415px;
         object-fit: cover;
-        border-radius: 25px;   
+        border-radius: 25px; 
+        @media (max-width: 767.98px) {
+            width: 93%;
+            height: 255px;
+            padding: 15px;
+            border-radius: 40px;
+            }  
         }
         &__buttons {
             display: flex;
@@ -19,6 +25,11 @@
                 top: 230px;
                 left: 50px;
                 font-size: 150px;
+                @media (max-width: 767.98px) {
+                    font-size: 45px;
+                    top: 200px;
+                    left: 25px,
+                    }  
                 }
             &--right {
                 border:none;
@@ -29,6 +40,11 @@
                 top: 230px;
                 right: 50px;
                 font-size: 150px;
+                @media (max-width: 767.98px) {
+                    font-size: 45px;
+                    top: 200px;
+                    right: 25px,
+                    }
             }
         }
 }
