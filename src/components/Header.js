@@ -5,7 +5,7 @@ import '../style/header-footer.css'
 function Header (){
     return (
         <header>
-            <img src={LOGO} alt="Logo Kasa" />
+            <img  className='header__logo' src={LOGO} alt="Logo Kasa" />
             <nav>
                 <li>
                     <Link to="/">Accueil</Link>

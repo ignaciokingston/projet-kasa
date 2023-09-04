@@ -2,7 +2,7 @@
   width: 99vw;
   text-align: center;
 }
-.slideshow img {
+.slideshow__image {
   width: 97%;
   height: 415px;
   -o-object-fit: cover;
@@ -13,19 +13,21 @@
   display: flex;
   justify-content: space-between;
 }
-.slideshow__buttons button {
+.slideshow__buttons--left {
   border: none;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0);
-}
-.slideshow__buttons--left {
   position: absolute;
   top: 230px;
   left: 50px;
   font-size: 150px;
 }
 .slideshow__buttons--right {
+  border: none;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   position: absolute;
   top: 230px;
   right: 50px;

@@ -15,7 +15,7 @@ const Slideshow = ({ pictures }) => {
 
     return (
         <div className='slideshow'>
-            <img src={pictures[currentImageIndex]} alt={`Slide ${currentImageIndex}`} />
+            <img className='slideshow__image' src={pictures[currentImageIndex]} alt={`Slide ${currentImageIndex}`} />
             {pictures.length > 1 && (
                 <div className='slideshow__buttons'>
                     <button className='slideshow__buttons--left' onClick={prevSlide}>&lt;</button>   

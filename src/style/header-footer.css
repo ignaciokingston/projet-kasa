@@ -8,6 +8,7 @@ hacer un main-color con rojo para reusar
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0;
 }
@@ -19,15 +20,17 @@ header {
 }
 @media (max-width: 767.98px) {
   header {
-    margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
   }
 }
+header .header__logo {
+  padding-left: 5px;
+}
 @media (max-width: 767.98px) {
-  header img {
+  header .header__logo {
     width: 39%;
     height: 46px;
-    padding-left: 32px;
+    padding: 0;
   }
 }
 header nav {
@@ -38,14 +41,13 @@ header nav {
 @media (max-width: 767.98px) {
   header nav {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     height: 46px;
-    padding-right: 15px;
   }
 }
 header li {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   gap: 90px;
 }
 @media (max-width: 767.98px) {

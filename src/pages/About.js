@@ -7,7 +7,7 @@ import '../style/collapse.css';
 
 function About() {
     return (
-      <main>
+      <main className='main__about'>
         <Banner imageUrl={Banner2} title="" />
         <div className='about'>
           <Collapse title='Fiabilité' content='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.'/>
