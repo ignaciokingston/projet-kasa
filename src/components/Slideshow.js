@@ -18,8 +18,8 @@ const Slideshow = ({ pictures }) => {
             <img src={pictures[currentImageIndex]} alt={`Slide ${currentImageIndex}`} />
             {pictures.length > 1 && (
                 <div className='slideshow__buttons'>
-                    <button onClick={prevSlide}>&lt;</button>   
-                    <button onClick={nextSlide}>&gt;</button>
+                    <button className='slideshow__buttons--left' onClick={prevSlide}>&lt;</button>   
+                    <button className='slideshow__buttons--right' onClick={nextSlide}>&gt;</button>
                 </div>
             )}
         </div>  

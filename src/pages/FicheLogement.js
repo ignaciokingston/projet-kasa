@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Slideshow from '../components/Slideshow';
 import logementsData from '../annonces.json';
+import '../style/fichelogement.css';
 
 function FicheLogement() {
   const {id} = useParams();
