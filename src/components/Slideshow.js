@@ -13,13 +13,20 @@ const Slideshow = ({ pictures }) => {
         );
     };
 
+    const totalImages = pictures.length;
+
     return (
         <div className='slideshow'>
             <img className='slideshow__image' src={pictures[currentImageIndex]} alt={`Slide ${currentImageIndex}`} />
-            {pictures.length > 1 && (
+            {totalImages > 1 && (
                 <div className='slideshow__buttons'>
                     <button className='slideshow__buttons--left' onClick={prevSlide}>&lt;</button>   
                     <button className='slideshow__buttons--right' onClick={nextSlide}>&gt;</button>
+                </div>
+            )}
+            {totalImages > 0 && (
+                <div className='slideshow__counter'>
+                    {currentImageIndex + 1}/{totalImages}
                 </div>
             )}
         </div>  
