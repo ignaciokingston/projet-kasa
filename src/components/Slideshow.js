@@ -24,7 +24,7 @@ const Slideshow = ({ pictures }) => {
                     <button className='slideshow__buttons--right' onClick={nextSlide}>&gt;</button>
                 </div>
             )}
-            {totalImages > 0 && (
+            {totalImages > 1 && (
                 <div className='slideshow__counter'>
                     {currentImageIndex + 1}/{totalImages}
                 </div>
