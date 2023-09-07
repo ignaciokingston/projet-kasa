@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import Slideshow from '../components/Slideshow';
 import Title from '../components/Title';
 import Host from '../components/Host';
@@ -8,14 +8,13 @@ import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
 import logementsData from '../annonces.json';
 import '../style/fichelogement.css';
-
 function FicheLogement() {
   const {id} = useParams();
 
   const logement = logementsData.find(logement => logement.id === id);
 
   if (!logement) {
-    return <div> Logement non trouvé</div>
+    return <Navigate to="/*"/>
   }
 
     return (
