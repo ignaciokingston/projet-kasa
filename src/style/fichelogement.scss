@@ -1,7 +1,7 @@
 /*slideshow*/
 
 .slideshow {
-    width: 99vw;
+    width: 98.5vw;
     text-align: center;
         &__image {
         width: 97%;
@@ -11,8 +11,8 @@
         @media (max-width: 767.98px) {
             width: 93%;
             height: 255px;
-            padding: 15px;
-            border-radius: 40px;
+            padding: 0 16px 0 15px;
+            border-radius: 30px;
             }  
         }
         &__buttons {
@@ -69,7 +69,10 @@
 /*description fichelogement*/
 
 .fichelogement {
-    padding: 20px 0 0 20px;
+    padding: 20px 10px 0 20px;
+    @media (max-width: 767.98px) {
+        padding-left: 15px; 
+    }
     &__titlehost {
         display: flex;
         justify-content: space-between;
@@ -80,16 +83,20 @@
         justify-content: space-between;
         width: 99%;
         @media (max-width: 767.98px) {
-            flex-wrap: wrap;
-           
+            flex-wrap: wrap;  
         }
     }
     &__collapses {
+        width: 95.5vw;
         display: flex;
-        justify-content: space-between;
-        width: 100%;
+        gap: 120px;
         @media (max-width: 767.98px) {
+        width: 100%;
+        gap: 0;
         flex-direction: column;
+        }
+        & button {
+            width: 100%;
         }
         &--left {
             width: 50%;
@@ -99,6 +106,7 @@
         }
         &--right {
             width: 50%;
+            display: flex;
             @media (max-width: 767.98px) {
                 width: 100%;
             }
@@ -115,6 +123,8 @@
         margin:0;
         @media (max-width: 767.98px) {
             font-size: 18px;
+            font-weight: bold;
+            width: 80%;
         }
     }
     &__location {
@@ -131,14 +141,21 @@
 .host{
     display: flex;
     text-align: right;
+    @media (max-width: 767.98px) {
+        position: absolute;
+        top: 483px;
+        right: 12px;
+    }
     &__name {
     color: #FF6060;
     font-size: 18px;
-    padding-right: 5px;
+    padding-right: 15px;
     width: 50%;
     margin:0;
     @media (max-width: 767.98px) {
         font-size: 12px;
+        padding:0;
+        width: 50px;
     }
     }
     &__image {
@@ -147,10 +164,12 @@
         border-radius: 50%;
         padding:0;
         margin:0;
+        align-items: end;
         @media (max-width: 767.98px) {
             width: 32px;
             height: 32px;
-        }
+            padding-left: 5px;
+            }
     }
 }
 
@@ -160,6 +179,10 @@
     color: white;
     display: flex;
     gap: 20px;
+    @media (max-width: 767.98px) {
+        width: 100%;
+        
+    }
     &__tag {
         background-color: #FF6060;
         font-size: 14px;
@@ -168,6 +191,8 @@
         @media (max-width: 767.98px) {
             font-size: 10px;
             width: 100%;
+            padding: 5px;
+            text-align: center;
         }
     }
 }
@@ -180,10 +205,11 @@
     display:flex;
     justify-content: space-around;
     @media (max-width: 767.98px) {
-        padding-top: 10px;
-        height: 13px;
-        width: 50%;
-        align-items: flex-start;
+        padding-top: 15px;
+        height: 20px;
+        width: 35%;
         
     }
 }
+
+

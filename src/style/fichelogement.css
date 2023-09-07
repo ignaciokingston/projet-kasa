@@ -1,6 +1,6 @@
 /*slideshow*/
 .slideshow {
-  width: 99vw;
+  width: 98.5vw;
   text-align: center;
 }
 .slideshow__image {
@@ -14,8 +14,8 @@
   .slideshow__image {
     width: 93%;
     height: 255px;
-    padding: 15px;
-    border-radius: 40px;
+    padding: 0 16px 0 15px;
+    border-radius: 30px;
   }
 }
 .slideshow__buttons {
@@ -74,7 +74,12 @@
 
 /*description fichelogement*/
 .fichelogement {
-  padding: 20px 0 0 20px;
+  padding: 20px 10px 0 20px;
+}
+@media (max-width: 767.98px) {
+  .fichelogement {
+    padding-left: 15px;
+  }
 }
 .fichelogement__titlehost {
   display: flex;
@@ -92,14 +97,19 @@
   }
 }
 .fichelogement__collapses {
+  width: 95.5vw;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  gap: 120px;
 }
 @media (max-width: 767.98px) {
   .fichelogement__collapses {
+    width: 100%;
+    gap: 0;
     flex-direction: column;
   }
+}
+.fichelogement__collapses button {
+  width: 100%;
 }
 .fichelogement__collapses--left {
   width: 50%;
@@ -111,6 +121,7 @@
 }
 .fichelogement__collapses--right {
   width: 50%;
+  display: flex;
 }
 @media (max-width: 767.98px) {
   .fichelogement__collapses--right {
@@ -130,6 +141,8 @@
 @media (max-width: 767.98px) {
   .title__title {
     font-size: 18px;
+    font-weight: bold;
+    width: 80%;
   }
 }
 .title__location {
@@ -146,16 +159,25 @@
   display: flex;
   text-align: right;
 }
+@media (max-width: 767.98px) {
+  .host {
+    position: absolute;
+    top: 483px;
+    right: 12px;
+  }
+}
 .host__name {
   color: #FF6060;
   font-size: 18px;
-  padding-right: 5px;
+  padding-right: 15px;
   width: 50%;
   margin: 0;
 }
 @media (max-width: 767.98px) {
   .host__name {
     font-size: 12px;
+    padding: 0;
+    width: 50px;
   }
 }
 .host__image {
@@ -164,11 +186,13 @@
   border-radius: 50%;
   padding: 0;
   margin: 0;
+  align-items: end;
 }
 @media (max-width: 767.98px) {
   .host__image {
     width: 32px;
     height: 32px;
+    padding-left: 5px;
   }
 }
 
@@ -177,6 +201,11 @@
   color: white;
   display: flex;
   gap: 20px;
+}
+@media (max-width: 767.98px) {
+  .tags {
+    width: 100%;
+  }
 }
 .tags__tag {
   background-color: #FF6060;
@@ -188,6 +217,8 @@
   .tags__tag {
     font-size: 10px;
     width: 100%;
+    padding: 5px;
+    text-align: center;
   }
 }
 
@@ -200,9 +231,8 @@
 }
 @media (max-width: 767.98px) {
   .rating {
-    padding-top: 10px;
-    height: 13px;
-    width: 50%;
-    align-items: flex-start;
+    padding-top: 15px;
+    height: 20px;
+    width: 35%;
   }
 }/*# sourceMappingURL=fichelogement.css.map */

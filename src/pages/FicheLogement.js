@@ -32,7 +32,7 @@ function FicheLogement() {
           </div>
           <div className='fichelogement__collapses'>
             <div className='fichelogement__collapses--left'>
-              <Collapse className='custom-button' title='Description' content= {logement.description} />
+              <Collapse title='Description' content= {logement.description} />
             </div>
             <div className='fichelogement__collapses--right'>
               <Collapse title='Equipements' content= {logement.equipments} />

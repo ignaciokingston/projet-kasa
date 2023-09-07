@@ -30,6 +30,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    
 
     &__button {
       width: 85%;
@@ -83,7 +84,7 @@
         font-size:14px;
       }  
       &.expanded {
-        max-height: 200px;
+        max-height: 700px;
         opacity: 1;
         transition: all 0.7s ease-in-out;
         padding:5px;
