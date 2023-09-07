@@ -35,7 +35,7 @@ function FicheLogement() {
               <Collapse title='Description' content= {logement.description} />
             </div>
             <div className='fichelogement__collapses--right'>
-              <Collapse title='Equipements' content= {logement.equipments} />
+              <Collapse title='Equipements' content= {logement.equipments.join(', ')} />
             </div>
           </div>
         </div>
