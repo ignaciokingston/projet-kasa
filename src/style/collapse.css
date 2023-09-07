@@ -89,7 +89,7 @@
   }
 }
 .collapse__content.expanded {
-  max-height: 100px;
+  max-height: 200px;
   opacity: 1;
   transition: all 0.7s ease-in-out;
   padding: 5px;

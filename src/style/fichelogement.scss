@@ -1,3 +1,5 @@
+/*slideshow*/
+
 .slideshow {
     width: 99vw;
     text-align: center;
@@ -16,6 +18,7 @@
         &__buttons {
             display: flex;
             justify-content: space-between;
+            align-items: normal;
             &--left {
                 border:none;
                 color:white;
@@ -61,7 +64,126 @@
             }
         }
 }
-                
+    
+
+/*description fichelogement*/
+
+.fichelogement {
+    padding: 20px 0 0 20px;
+    &__titlehost {
+        display: flex;
+        justify-content: space-between;
+        padding:0;
+    }
+    &__tagsrating {
+        display:flex;
+        justify-content: space-between;
+        width: 99%;
+        @media (max-width: 767.98px) {
+            flex-wrap: wrap;
+           
+        }
+    }
+    &__collapses {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @media (max-width: 767.98px) {
+        flex-direction: column;
+        }
+        &--left {
+            width: 50%;
+            @media (max-width: 767.98px) {
+                width: 100%;
+            }       
+        }
+        &--right {
+            width: 50%;
+            @media (max-width: 767.98px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*Title and location*/
+.title {
+    color: #FF6060;
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        margin:0;
+        @media (max-width: 767.98px) {
+            font-size: 18px;
+        }
+    }
+    &__location {
+        font-size: 18px;
+        @media (max-width: 767.98px) {
+            font-size: 14px;
+        }
+    }
+}
 
 
- 
+/*host*/
+
+.host{
+    display: flex;
+    text-align: right;
+    &__name {
+    color: #FF6060;
+    font-size: 18px;
+    padding-right: 5px;
+    width: 50%;
+    margin:0;
+    @media (max-width: 767.98px) {
+        font-size: 12px;
+    }
+    }
+    &__image {
+        width: 64px;
+        height:64px;
+        border-radius: 50%;
+        padding:0;
+        margin:0;
+        @media (max-width: 767.98px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+/*tags*/
+
+.tags {
+    color: white;
+    display: flex;
+    gap: 20px;
+    &__tag {
+        background-color: #FF6060;
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 5px 25px 5px 25px;
+        @media (max-width: 767.98px) {
+            font-size: 10px;
+            width: 100%;
+        }
+    }
+}
+
+/*rating*/
+
+.rating {
+    width: 15%;
+    height: 24px;
+    display:flex;
+    justify-content: space-around;
+    @media (max-width: 767.98px) {
+        padding-top: 10px;
+        height: 13px;
+        width: 50%;
+        align-items: flex-start;
+        
+    }
+}

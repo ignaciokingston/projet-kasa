@@ -1,6 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Slideshow from '../components/Slideshow';
+import Title from '../components/Title';
+import Host from '../components/Host';
+import Tags from '../components/Tags';
+import Rating from '../components/Rating';
+import Collapse from '../components/Collapse';
 import logementsData from '../annonces.json';
 import '../style/fichelogement.css';
 
@@ -16,6 +21,24 @@ function FicheLogement() {
     return (
       <div>
        <Slideshow pictures={logement.pictures} />
+       <div className='fichelogement'>
+          <div className='fichelogement__titlehost'>
+            <Title title={logement.title} location={logement.location}/>
+            <Host hostName={logement.host.name} hostPicture={logement.host.picture}/>
+          </div>
+          <div className='fichelogement__tagsrating'>
+            <Tags tags={logement.tags} />
+            <Rating rating={logement.rating} />
+          </div>
+          <div className='fichelogement__collapses'>
+            <div className='fichelogement__collapses--left'>
+              <Collapse className='custom-button' title='Description' content= {logement.description} />
+            </div>
+            <div className='fichelogement__collapses--right'>
+              <Collapse title='Equipements' content= {logement.equipments} />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
