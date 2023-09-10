@@ -121,7 +121,6 @@
 }
 .fichelogement__collapses--right {
   width: 50%;
-  display: flex;
 }
 @media (max-width: 767.98px) {
   .fichelogement__collapses--right {
