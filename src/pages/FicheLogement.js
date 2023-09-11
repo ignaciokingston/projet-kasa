@@ -8,6 +8,7 @@ import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
 import logementsData from '../annonces.json';
 import '../style/fichelogement.css';
+
 function FicheLogement() {
   const {id} = useParams();
 
@@ -36,7 +37,7 @@ function FicheLogement() {
             <div className='fichelogement__collapses--right'>
               <Collapse title='Equipements' 
                         content={logement.equipments.map((equipment, index) => (
-                    <div key={index}>{equipment}</div>
+                    <p key={index}>{equipment}</p>
                   ))}/>
             </div>
           </div>

@@ -91,17 +91,20 @@
       @media (max-width: 767.98px) {
         padding:0;
         font-size:14px;
-      }  
+      }
       
       &.expanded {
         max-height: 700px;
         opacity: 1;
         transition: all 0.7s ease-in-out;
         padding:5px;  
-      }
+        font-size: 4px;
+        }
     }
 }
-  
+
+
+
 
 
 
