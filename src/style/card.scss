@@ -1,12 +1,18 @@
 
 /*Contient le style du Home pour le banner et les cartes de logements*/
 
-/*Main home*/
+/*mixin main*/
 
-.main__home {
+@mixin main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/*Main home*/
+
+.main__home {
+    @include main;
 }
 
 /*Banner home*/
