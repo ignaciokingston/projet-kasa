@@ -1,9 +1,15 @@
 @charset "UTF-8";
 /*Contient le style du body (général), header, footer*/
+/*Variables*/
 /*Body général*/
 * {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
+}
+@media (max-width: 767.98px) {
+  * {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -11,6 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*Header*/
@@ -84,7 +91,6 @@ footer {
 footer .footer__items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 @media (max-width: 767.98px) {

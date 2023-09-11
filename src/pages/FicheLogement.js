@@ -37,7 +37,7 @@ function FicheLogement() {
             <div className='fichelogement__collapses--right'>
               <Collapse title='Equipements' 
                         content={logement.equipments.map((equipment, index) => (
-                    <p key={index}>{equipment}</p>
+                    <div className='fichelogement__collapses--right2' key={index}>{equipment}</div>
                   ))}/>
             </div>
           </div>
