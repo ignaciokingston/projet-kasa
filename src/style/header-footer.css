@@ -1,6 +1,6 @@
-/*poner un body font-family montserrat 
-hacer un main-color con rojo para reusar
-*/
+@charset "UTF-8";
+/*Contient le style du body (général), header, footer*/
+/*Body général*/
 * {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -13,6 +13,7 @@ body {
   margin: 0;
 }
 
+/*Header*/
 header {
   padding: 25px;
   display: flex;
@@ -72,6 +73,7 @@ header a:hover {
   border-bottom: 2px solid #FF6060;
 }
 
+/*Footer*/
 footer {
   background-color: black;
   color: white;

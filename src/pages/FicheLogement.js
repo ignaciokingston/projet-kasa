@@ -34,7 +34,10 @@ function FicheLogement() {
               <Collapse title='Description' content= {logement.description} />
             </div>
             <div className='fichelogement__collapses--right'>
-              <Collapse title='Equipements' content= {logement.equipments.join(', ')} />
+              <Collapse title='Equipements' 
+                        content={logement.equipments.map((equipment, index) => (
+                    <div key={index}>{equipment}</div>
+                  ))}/>
             </div>
           </div>
         </div>

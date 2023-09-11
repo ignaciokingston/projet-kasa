@@ -1,9 +1,12 @@
+/*Contient le style du Home pour le banner et les cartes de logements*/
+/*Main home*/
 .main__home {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/*Banner home*/
 .banner__image {
   margin-bottom: 30px;
   height: 250px;
@@ -48,6 +51,7 @@
   }
 }
 
+/*Cartes de logements*/
 .logements-container {
   height: 3000px;
   display: flex;

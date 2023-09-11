@@ -1,4 +1,7 @@
-/*slideshow*/
+/*Contient le style du slideshow et sa description (title & description,
+host - nom et photo -, tags et rating)  */
+
+/*Slideshow*/
 
 .slideshow {
     width: 98.5vw;
@@ -8,6 +11,7 @@
         height: 415px;
         object-fit: cover;
         border-radius: 25px; 
+
         @media (max-width: 767.98px) {
             width: 93%;
             height: 255px;
@@ -15,10 +19,12 @@
             border-radius: 30px;
             }  
         }
+
         &__buttons {
             display: flex;
             justify-content: space-between;
             align-items: normal;
+
             &--left {
                 border:none;
                 color:white;
@@ -29,12 +35,14 @@
                 left: 50px;
                 font-size: 150px;
                 cursor:pointer;
+
                 @media (max-width: 767.98px) {
                     font-size: 45px;
                     top: 200px;
                     left: 25px,
                     }  
                 }
+
             &--right {
                 border:none;
                 color:white;
@@ -45,6 +53,7 @@
                 right: 50px;
                 font-size: 150px;
                 cursor:pointer;
+
                 @media (max-width: 767.98px) {
                     font-size: 45px;
                     top: 200px;
@@ -59,6 +68,7 @@
             position:absolute;
             top: 475px;
             left: 650px;
+
             @media (max-width: 767.98px) {
                 display:none;
             }
@@ -70,44 +80,57 @@
 
 .fichelogement {
     padding: 20px 10px 0 20px;
+
     @media (max-width: 767.98px) {
         padding-left: 15px; 
     }
+
     &__titlehost {
         display: flex;
         justify-content: space-between;
         padding:0;
     }
+
     &__tagsrating {
         display:flex;
         justify-content: space-between;
         width: 99%;
+
         @media (max-width: 767.98px) {
             flex-wrap: wrap;  
         }
     }
+
     &__collapses {
         width: 95.5vw;
         display: flex;
         gap: 120px;
+
         @media (max-width: 767.98px) {
         width: 100%;
         gap: 0;
         flex-direction: column;
         }
+
         & button {
             width: 100%;
         }
+
         &--left {
             width: 50%;
             @media (max-width: 767.98px) {
                 width: 100%;
             }       
         }
+
         &--right {
             width: 50%;
             @media (max-width: 767.98px) {
                 width: 100%;
+            }
+            &.expanded {
+            display: flex;
+            flex-direction: column;
             }
         }
     }
@@ -120,6 +143,7 @@
         font-size: 36px;
         font-weight: 500;
         margin:0;
+
         @media (max-width: 767.98px) {
             font-size: 18px;
             font-weight: bold;
@@ -128,6 +152,7 @@
     }
     &__location {
         font-size: 18px;
+
         @media (max-width: 767.98px) {
             font-size: 14px;
         }
@@ -140,23 +165,27 @@
 .host{
     display: flex;
     text-align: right;
+
     @media (max-width: 767.98px) {
         position: absolute;
         top: 483px;
         right: 12px;
     }
+
     &__name {
     color: #FF6060;
     font-size: 18px;
     padding-right: 15px;
     width: 50%;
     margin:0;
+
     @media (max-width: 767.98px) {
         font-size: 12px;
         padding:0;
         width: 50px;
+        }
     }
-    }
+
     &__image {
         width: 64px;
         height:64px;
@@ -164,11 +193,12 @@
         padding:0;
         margin:0;
         align-items: end;
+
         @media (max-width: 767.98px) {
             width: 32px;
             height: 32px;
             padding-left: 5px;
-            }
+        }
     }
 }
 
@@ -178,15 +208,17 @@
     color: white;
     display: flex;
     gap: 20px;
+
     @media (max-width: 767.98px) {
-        width: 100%;
-        
+        width: 100%;    
     }
+
     &__tag {
         background-color: #FF6060;
         font-size: 14px;
         border-radius: 10px;
         padding: 5px 25px 5px 25px;
+
         @media (max-width: 767.98px) {
             font-size: 10px;
             width: 100%;
@@ -203,11 +235,11 @@
     height: 24px;
     display:flex;
     justify-content: space-around;
+
     @media (max-width: 767.98px) {
         padding-top: 15px;
         height: 20px;
-        width: 35%;
-        
+        width: 35%;    
     }
 }
 

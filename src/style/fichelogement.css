@@ -1,4 +1,6 @@
-/*slideshow*/
+/*Contient le style du slideshow et sa description (title & description,
+host - nom et photo -, tags et rating)  */
+/*Slideshow*/
 .slideshow {
   width: 98.5vw;
   text-align: center;
@@ -126,6 +128,10 @@
   .fichelogement__collapses--right {
     width: 100%;
   }
+}
+.fichelogement__collapses--right.expanded {
+  display: flex;
+  flex-direction: column;
 }
 
 /*Title and location*/
