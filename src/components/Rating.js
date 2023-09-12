@@ -11,6 +11,7 @@ const Rating = ({ rating }) => {
     //calculer les étoiles vides
     const emptyStars = 5 - filledStars;
 
+    //array vide qu'on va remplir avec les boucles de filledStars et emptyStars
     const stars = [];
 
     //pour générer les étoiles 
